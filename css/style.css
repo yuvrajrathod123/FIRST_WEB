@@ -21,17 +21,22 @@ ul li{
 }
 
 a{
+    /* 1.6rem = 16px */
     font-size: 1.6rem;
     text-decoration: none;
 }
 
 p, li{
     font-size: 1.6rem;
+    /* 1em = 10px(62.5%)
+       0.5em = 5px
+       o.15em = 1.5px */
     margin-bottom: 0.5em;
     letter-spacing: 0.15em;
 }
 
 h1, h2, h3{
+   
     margin-bottom: 0.5em;
     letter-spacing: 0.15em;
     font-weight: 500;
@@ -47,6 +52,8 @@ h1, h2, h3{
 }
 
 .lg-heading{
+    /* 1em = 10px
+        3.5rem = 35px */
     font-size: 3.5rem;
 }
 
@@ -67,23 +74,38 @@ h1, h2, h3{
 .text-gray{
     color: #555555;
 }
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: white;
+    color:red;
+    border-radius: 100px;
+
+}
+.btn-secondary{
+    background-color: #f4f4f400;
+    color: red;
+    border-radius: 100px;
+    border: 2px solid red;
+}
   
-
-
-
-
-
-
-
-
-
 
 /* ================= header styling ================== */
 
 .header{
     height: 95vh;
+    /* Jiske respect me centr ko lan hai usko position : realtive */
+    /* this is for header content ko centre me lane ke liye */
+    position: relative;
    
-    /* linear greadient picture kothoda dark krne kw kiye use kiya */
+    /* linear greadient picture thoda dark krne kw kiye use kiya */
     /* structure----> linear gradient(rgba(red,green,blue,capcity)) */
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/header-image.jpg);
     /* agar window ki size kam jyada kre to img centre me hi rhena chahiye */
@@ -91,14 +113,16 @@ h1, h2, h3{
     /* image pure container ko cover krna chahiye */
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 
 /* =========== NAV BAR =========== */
 
 .navbar{
-    border: 2px solid white;
+   
     padding: 1rem;
+   
 }
 
 
@@ -122,11 +146,87 @@ h1, h2, h3{
     color:#f4f4f4
 }
 
+/* for  space between link word and border-bottom */
+.navbar a{
+    padding: 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+    
+}
 
+/* for float clear */
 .navbar::after{
     content: '';
     display: block;
     clear: both;
 }
 
+/* ============= header content ============== */
 
+.header-content{
+    /* Jisko centre me lan hai usko position : absloute */
+    /* Jiske respect me centr ko lan hai usko position : realtive */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* proper centre me lane keliye */
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+     
+}
+.header-content p{
+    text-transform: uppercase;
+}
+
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* ============== show case styling ============== */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    background: #fff;
+   
+}
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width:50%
+
+}
+
+.row2 .img-box,
+.row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 3rem;
+   
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
