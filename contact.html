@@ -1,43 +1,82 @@
-.showcase{
-    background: #ddd;
-    padding: 10rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0b9720c2f0.js" crossorigin="anonymous"></script>
+    <title>TRAVEL WEBSITE | CONTACT</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container">
+            <h1 class="logo lg-heading text-light">WT</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="index.html" >HOME</a></li>
+                <li class="nav-item"><a href="about.html" >ABOUT</a></li>
+                <li class="nav-item"><a href="contact.html" >CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="company-address">
+                    <div class="address-group">
+                        <i class="fa-solid fa-location-dot fa-2x text-red"></i>
+                        <h2 class="text-gray md-heading">LOCATION</h2>
+                        <p>Ramnagar colony, Rajangaon,Aurangabad</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="fa fa-envelope fa-2x text-red"></i>
+                        <h2 class="text-gray md-heading">E-MAIL</h2>
+                        <p>yuvirathod122@gmail.com</p>
+                    </div>
+                    <div class="address-group">
+                        <i class="fa-solid fa-square-phone fa-2x text-red"></i>
+                        <h2 class=" text-gray md-heading">CALL</h2>
+                        <p>+914568399234</p>
+                    </div>
+                    <img src="./img/company-img.jpg" alt="yuvi">
+              
+                </div>
+                <form action="" class="form">
+                    <h1 class="lg-heading text-black">contact us</h1>
+                    <p class="text-gray"> Quibusdam aperiam hic dolore sequi quae aliquam placeat, repudiandae ipsum ducimus voluptas.</p>
 
-.row{
-    height: 350px;
-    border: 2px solid red;
-}
-.row1{
-    margin-bottom: 10rem;
-}
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="form-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-.row1 .img-box,
-.row2 .text-box{
-    float: left;
-    width:50%
-
-}
-
-.row2 .img-box,
-.row1 .text-box{
-    float: right;
-    width: 50%;
-}
-
-.row .img-box{
-    border: 2px solid green;
-    height: 100%;
-}
-
-.row .text-box{
-    border: 2px solid rgb(113, 0, 128);
-    padding: 3rem;
-   
-}
-
-.row .img-box img{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-items">
+               <a href="#"><i class="fa-brands fa-facebook fa-3x icon"></i></a>
+               <a href="#" ><i class="fa-brands fa-instagram fa-3x icon"></i></a>
+                <a href="https://github.com/yuvrajrathod123" target="_blank"><i class="fa-brands fa-github fa-3x icon"></i></a>
+                <p>World Travel &copy; 2022, All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
