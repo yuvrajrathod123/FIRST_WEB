@@ -527,3 +527,26 @@ h1, h2, h3{
     border: none;
     cursor: pointer;
 }
+
+
+
+/* =============== media queries ================= */
+
+@media (max-width: 500px){
+    html{
+        /* 100% == 16%
+         50% == 8px */
+        font-size: 50%;
+    }
+
+    .navbar .nav-items,
+    .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-content .main-heading{
+        display: none;
+    }
+}
